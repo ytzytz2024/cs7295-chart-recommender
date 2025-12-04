@@ -38,26 +38,27 @@ Follow these steps to run the project locally.
 
 ## 1. Clone the Repository
 
-\`\`\`bash
+```bash
 git clone https://github.com/ytzytz2024/cs7295-chart-recommender.git
 cd cs7295-chart-recommender
-\`\`\`
+```
 
 ---
 
 ## 2. Create a Virtual Environment (Recommended)
 
-\`\`\`bash
+```bash
 python3 -m venv .venv
 source .venv/bin/activate   # macOS / Linux
+```
 
 ## 3. Install Dependencies
 
 The project uses \`requirements.txt\`. Install everything with:
 
-\`\`\`bash
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 Dependencies include:
 
@@ -80,20 +81,20 @@ Go to: https://platform.openai.com
 - Go to **API Keys**  
 - Create a new key  
 
-### Step 4.2 — Add key to \`.env\`  
+### Step 4.2 — Add key to `.env`  
 In the project root, create a file named:
 
-\`\`\`
+```
 .env
-\`\`\`
+```
 
 Put your key inside:
 
-\`\`\`
+```
 OPENAI_API_KEY=your_api_key_here
-\`\`\`
+```
 
-⚠️ Do **not** commit \`.env\` to GitHub.
+⚠️ Do **not** commit `.env` to GitHub.
 
 ---
 
@@ -101,15 +102,15 @@ OPENAI_API_KEY=your_api_key_here
 
 Start Streamlit with:
 
-\`\`\`bash
+```bash
 streamlit run app.py
-\`\`\`
+```
 
 This will open the app in your browser at:
 
-\`\`\`
+```
 http://localhost:8501
-\`\`\`
+```
 
 ---
 
@@ -127,13 +128,13 @@ http://localhost:8501
 
 # 🛠 Project Structure
 
-\`\`\`
+```
 .
 ├── app.py               # Main Streamlit application
 ├── requirements.txt     # Dependencies
 ├── .env                 # (local only) API key
 └── README.md            # Documentation
-\`\`\`
+```
 
 ---
 
@@ -170,7 +171,12 @@ You can extend this schema anytime to add more chart types.
 
 ---
 
-# 🤝 Acknowledgements
+# 🤝 Authors
+
+- Tianze Yin
+- Siyang Li
+- Tinghao Li
+- Hange Zhang
 
 CS7295 — Visualization & Generative AI  
 Northeastern University  
