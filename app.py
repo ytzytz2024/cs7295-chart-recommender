@@ -47,6 +47,10 @@ def analyze_data(df: pd.DataFrame):
             "type": col_type,
             "n_unique": series.nunique()
         }
+        # {
+        #   "gender": {"type": "categorical", "n_unique": 2},
+        #   "mutual funds": {"type": "numeric", "n_unique": 120}
+        # }
 
     return meta, df
 
