@@ -37,7 +37,7 @@ def analyze_data(df: pd.DataFrame):
         else:
             # Try to coerce to datetime
             try:
-                parsed = pd.to_datetime(series, errors="raise")
+                parsed = pd.to_datetime(series, format="%Y-%m-%d", errors="raise") 
                 df[col] = parsed
                 col_type = "datetime"
             except Exception:
@@ -51,6 +51,7 @@ def analyze_data(df: pd.DataFrame):
         #   "gender": {"type": "categorical", "n_unique": 2},
         #   "mutual funds": {"type": "numeric", "n_unique": 120}
         # }
+
 
     return meta, df
 
@@ -250,7 +251,7 @@ if uploaded_file is not None:
 
                 try:
                     chart = create_chart(df, x_col, y_col, chart_type, title)
-                    st.altair_chart(chart, use_container_width=True)
+                    st.altair_chart(chart, width="stretch")
                 except Exception as e:
                     st.error(f"Could not render {chart_type} chart: {e}")
 
