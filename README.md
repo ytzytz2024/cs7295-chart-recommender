@@ -30,6 +30,13 @@ All charts are rendered via Altair directly in Streamlit.
 
 ---
 
+## 🎥 Demo
+
+You can watch a short demo of this project here:  
+https://youtu.be/uIA-ISscpiA
+
+---
+
 # 🚀 Setup Instructions
 
 Follow these steps to run the project locally.
